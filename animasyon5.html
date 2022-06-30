@@ -1,0 +1,116 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>gallery pages</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+   <style>
+    body{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 10px;
+    }
+    .gallery{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+       
+    }
+    .item{
+        width: 33.3%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        transition: 300ms all;
+        background-color: black;
+        
+
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+        transition: 300ms all;
+    }
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 300ms all;
+    }
+    h1{
+        border: 1px solid black;
+        padding: 10px 15px;
+        color: black;
+        transition: 300ms all;
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+    .item:hover{
+        width: 70%;
+    }
+    .item:hover img{
+        opacity: 0.4;
+    }
+    .item:hover h1{
+        transform: translateY(0);
+        opacity: 1;
+    }
+   </style>
+</head>
+<body>
+    <div class="container">
+        <div class="gallery">
+            <div class="item">
+                <img src="https://cdn.pixabay.com/photo/2022/06/22/16/10/cathedral-7278228_960_720.jpg">
+                <div class="overlay">
+                    <div class="overlayitem">
+                        <h1>FAR CRY</h1>
+                    </div>
+                </div>
+            </div>
+                
+                    <div class="item">
+                        <img src="https://cdn.pixabay.com/photo/2022/06/23/10/44/kookaburra-7279507_960_720.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlayitem">
+                                <h1>FAR CRY</h1>
+                            </div>
+                        </div>
+                    </div>
+                
+                <div class="item">
+                    <img src="https://cdn.pixabay.com/photo/2022/06/23/03/39/woman-7279047_960_720.jpg" alt="">
+                    <div class="overlay">
+                        <div class="overlayitem">
+                            <h1>FAR CRY</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
